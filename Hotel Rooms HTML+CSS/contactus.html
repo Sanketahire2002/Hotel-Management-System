@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- *******  Link To CSS Style Sheet  ******* -->
+	<link rel="stylesheet" type="text/css" href="css/style-contact.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- *******  Font Awesome Icons Link  ******* -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+
+	<!-- *******  Link To Goggle Fonts  *******  -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,800;1,900&display=swap" rel="stylesheet">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Contact us</title>
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+        integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!----------------------HEADER START------------------------------>
+    <!---------------------------------------------------->
+
+    <header>
+        <div class="content flex_space">
+            <div class="logo">
+                <img src="images/logo.png" height="70" width="70">
+                <span class="logo-text">RoomNest</span>
+            </div>
+            <div class="navlinks">
+                <ul id="menulist">
+                    <li><a href="index.html">HOME</a> </li>
+                    <li><a href="contactus.html">CONTACT</a> </li>
+                    <li> <button class="primary-btn" onclick="location.href='login.html'">BOOK NOW</button> </li>
+                </ul>
+                <span class="fa fa-bars" onclick="menutoggle()"></span>
+            </div>
+        </div>
+    </header>
+
+    <!----------------------HEADER END------------------------------>
+    <!---------------------------------------------------->
+
+	<div class="container">
+		<main class="row">
+			
+			<!--  *******   Left Section (Column) Starts   *******  -->
+
+			<section class="col left">
+				
+				<!--  *******   Title Starts   *******  -->
+
+				<div class="contactTitle">
+					<h2>Get In Touch</h2>
+					<p>Feel free to contact us</p>
+				</div>
+
+				<!--  *******   Title Ends   *******  -->
+
+				<!--  *******   Contact Info Starts   *******  -->
+
+				<div class="contactInfo">
+					
+					<div class="iconGroup">
+						<div class="icon">
+							<i class="fa-solid fa-phone"></i>
+						</div>
+						<div class="details">
+							<span>Phone</span>
+							<span>+91 93707 63383</span>
+						</div>
+					</div>
+
+					<div class="iconGroup">
+						<div class="icon">
+							<i class="fa-solid fa-envelope"></i>
+						</div>
+						<div class="details">
+							<span>Email</span>
+							<span>support@roomnest.com</span>
+						</div>
+					</div>
+
+					<div class="iconGroup">
+						<div class="icon">
+							<i class="fa-solid fa-location-dot"></i>
+						</div>
+						<div class="details">
+							<span>Location</span>
+							<span>Office No. 101</span>	
+							<span>World Trade Centre</span>	
+							<span>Jalgaon, Maharashtra</span>	
+							<span>India, 425001</span>					
+						</div>
+					</div>
+
+				</div>
+
+				<!--  *******   Contact Info Ends   *******  -->
+
+				<!--  *******   Social Media Starts   *******  -->
+
+				<div class="socialMedia">
+					<a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+					<a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+					<a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+					<a href="https://www.linkedin.com/feed/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+				</div>
+
+				<!--  *******   Social Media Ends   *******  -->
+
+			</section>
+
+			<!--  *******   Left Section (Column) Ends   *******  -->
+
+			<!--  *******   Right Section (Column) Starts   *******  -->
+
+			<section class="col right">
+				
+				<!--  *******   Form Starts   *******  -->
+
+				<form class="messageForm" action="contactusurl" method="post">
+					
+					<div class="inputGroup halfWidth">
+						<input type="text" name="name" id="name" required="required">
+						<label>Your Name</label>
+					</div>
+
+					<div class="inputGroup halfWidth">
+						<input type="email" name="email" id="email" required="required">
+						<label>Email</label>
+					</div>
+
+					<div class="inputGroup fullWidth">
+						<input type="text" name="subject" id="subject" required="required">
+						<label>Subject</label>
+					</div>
+
+					<div class="inputGroup fullWidth">
+						<textarea required="required" name="description" id="description"></textarea>
+						<label>Say Something</label>
+					</div>
+
+					<div class="inputGroup fullWidth">
+						<button type="button" value="submit">Send Message</button>
+					</div>
+
+					<div id="successMessage" style="display: none; color: green; margin-top: 10px;">
+						Message submitted successfully!
+					</div>
+				</form>
+
+				<!--  *******   Form Ends   *******  -->
+			</section>
+
+			<!--  *******   Right Section (Column) Ends   *******  -->
+
+		</main>
+	</div>
+
+
+
+
+
+
+        <!----------------------FOOTER START------------------------------>
+    <!---------------------------------------------------->    
+   
+
+    <!---------------------------------------------------->
+    <!-------------------------FOOTER END--------------------------->
+<script>
+document.querySelector('.messageForm').addEventListener('submit', function(event) {
+		event.preventDefault(); // Prevent actual form submission
+		
+		// Display success message
+		const successMessage = document.getElementById('successMessage');
+		successMessage.style.display = 'block';
+		
+		// Clear the form fields
+		this.reset();
+		
+		// Hide the message after 3 seconds
+		setTimeout(() => {
+			successMessage.style.display = 'none';
+		}, 3000); // 3000 milliseconds = 3 seconds
+	});
+</script>
+    
+	
+</body>
+</html>
